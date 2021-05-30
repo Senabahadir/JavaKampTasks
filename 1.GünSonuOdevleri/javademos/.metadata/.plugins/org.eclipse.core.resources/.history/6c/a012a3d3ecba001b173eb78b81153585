@@ -1,0 +1,47 @@
+package stringDemo;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		String mesaj = "Bugün hava çok güzel.";
+		System.out.println(mesaj);
+		
+		/*   
+		 *  Java Dersi 17: Stringlerle Çalýþmak 1
+		System.out.println("Eleman sayýsý : " + mesaj.length());
+		System.out.println("5. eleman : " + mesaj.charAt(4));    // String içerisindeki deðeri yazdýrma. 
+		System.out.println(mesaj.concat("Yaþasýn"));             // String sonuna string ekleme 
+		System.out.println(mesaj);
+		
+		System.out.println(mesaj.startsWith("b"));      //String, A deðeri ile baþlýyor mu (output = boolean) büyük küçük harf duyarlý
+		System.out.println(mesaj.endsWith("."));
+		
+		char[] karakterler = new char[5];
+		mesaj.getChars(0, 5, karakterler, 0);    //5. eleman dahil deðil.
+		System.out.println(karakterler);
+		
+		System.out.println(mesaj.indexOf("av"));   //yazdýðýmýz karakterin kaçýncý eleman olduðunu verir. (ilk a'ya bakar sonrasýna bakmaz.) 
+		System.out.println(mesaj.lastIndexOf("a"));   // ayný iþlem ama saðdan baþlar.
+		
+		*/
+		
+		// Java Dersi 18 : Stringlerle Çalýþmak 2
+		
+		String yeniMesaj = mesaj.replace(' ', '-');
+		System.out.println(yeniMesaj);
+		
+		System.out.println(mesaj.substring(2));  // 2.indeksten sonraki mesaj (2 dahil)
+		System.out.println(mesaj.substring(2,5));  // 2-4 arasýnda kalan kýsým. (2 dahil, 5 dahil deðil.)
+		
+		for (String kelime: mesaj.split(" ")) {  // " " -> boþluk olan yerleri parçala
+			System.out.println(kelime);
+		}
+		
+		System.out.println(mesaj.toLowerCase());  // toLowerCase --> tüm harfleri küçük harfe çevirir
+		System.out.println(mesaj.toUpperCase());  // toUpperCase --> tüm harfleri büyük harfe çevirir
+		
+		System.out.println(mesaj.trim()); // mesajýn baþýnda ve sonunda boþlukla var is onu kaldýrýr.
+	}
+
+}

@@ -1,0 +1,25 @@
+package miniProjeAsalSayý;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		int number = 1;
+		int remainder = number %2; // remainder = kalan
+		System.out.println(remainder);
+		boolean isPrime = true;
+		
+		for (int i=2; i<number; i++) {
+			if(number % i ==0) {
+				isPrime = false;
+				
+			}
+		}
+		if(isPrime) {            // --> if(isPrime == true)   
+			System.out.println("Sayý Asaldýr");
+		}else {
+			System.out.println("Sayý asal deðildir.");
+		}
+	}
+
+}

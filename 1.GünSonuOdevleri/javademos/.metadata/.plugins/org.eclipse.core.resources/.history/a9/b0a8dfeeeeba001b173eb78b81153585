@@ -1,0 +1,33 @@
+package miniProjeAsalSayý;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		int number = 1;
+		int remainder = number %2; // remainder = kalan
+		System.out.println(remainder);
+		boolean isPrime = true;
+		
+		if(number==1) {
+			System.out.println("Sayý asal deðildir.");
+			return;
+		}
+		
+		if(number<1) {
+			System.out.println("Geçersiz Sayý");
+		}
+		
+		for (int i=2; i<number; i++) {    //En küçük asal sayý 2'dir. 1 asal sayý deðildir.
+			if(number % i ==0) {
+				isPrime = false;
+				
+			}
+		}
+		if(isPrime) {            // --> if(isPrime == true)   
+			System.out.println("Sayý Asaldýr");
+		}else {
+			System.out.println("Sayý asal deðildir.");
+		}
+	}
+
+}

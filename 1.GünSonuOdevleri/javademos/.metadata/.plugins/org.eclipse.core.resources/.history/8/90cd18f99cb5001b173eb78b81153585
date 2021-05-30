@@ -1,0 +1,15 @@
+package reCapDemo2;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		double[] myList = {1.1, 1.3, 4.3, 5.6};    // new yazmaya gerek yok. arka planda new oluyor..
+		// Gerisini yazmadým. 15. Video
+		
+		
+		String[][] sehirler = new String[3][3];  //çok boyutlu dizi
+		
+		sehirler[0[0 = "sena";
+	}   
+
+}

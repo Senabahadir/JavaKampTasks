@@ -1,0 +1,18 @@
+package arkadasSayilar;
+
+public class Main {
+
+	public static void main(String[] args) {
+		//220-284 -> bilinen en küçük arkadaþ sayýlar. 
+		//Kendileri hariç pozitif tam bölenlerinin birbirine eþit olan sayýlara arkadaþ sayý denir
+		// 220 bölenlerinin toplamý -> 284,  284 bölenlerinin toplamý -> 220
+		
+		int sayi1 = 220;
+		int sayi2 = 284;
+		int toplam1 = 0;
+		int toplam2 = 0;
+		
+
+	}
+
+}
